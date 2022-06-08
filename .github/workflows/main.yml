@@ -20,4 +20,4 @@ jobs:
         run: forge test -vvv
 
       - name: Run snapshot
-        run: forge snapshot >> $GITHUB_STEP_SUMMARY
+        run: forge snapshot && cat .gas-snapshot >> $GITHUB_STEP_SUMMARY
